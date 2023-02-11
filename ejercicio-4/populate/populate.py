@@ -15,4 +15,6 @@ with open('historico_2021.csv', 'r') as f:
     cur.copy_from(f, 'molinetes', sep=';')
 
 conn.commit()
+conn.close()
+
 print('Carga exitosa!')

@@ -1,6 +1,6 @@
 FROM python:3.10.8-buster
 
-RUN pip install pandas sqlalchemy psycopg2 flask
+RUN pip install pandas sqlalchemy==1.4 psycopg2 flask
 
 COPY app /home/app
 
